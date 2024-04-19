@@ -5,7 +5,15 @@
     text-decoration: none;
     list-style: none;
 }
+
+:root{
+    --dark-bcg: #000;
+    --dark-select: #717171;
+    --dark-select-hover: #f1f1f1;
+}
+
 body{
     width: 100%;
     min-height: 100vh;
+    background: var(--dark-bcg);
 }
