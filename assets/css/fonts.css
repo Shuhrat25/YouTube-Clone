@@ -78,7 +78,8 @@ body{
 }
 
 .nav_top .left .logo img{
-    width: 50px;
+    width: 35px;
+    margin-right: 5px;
 }
 
 .nav_top .left .logo > *{
