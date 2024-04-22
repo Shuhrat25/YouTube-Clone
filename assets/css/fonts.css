@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: "Poppins", sans-serif;
 }
 
 :root{
@@ -15,8 +19,8 @@
 
 .dark{
     --bcg: #000;
-    --select-bcg: #717171;
-    --select-bcg-hover: #f1f1f1;
+    --select-bcg: #4b4b4b;
+    --select-bcg-hover: #e7e4e4;
     --color: #fff;
 }
 
@@ -25,4 +29,73 @@ body{
     min-height: 100vh;
     background: var(--bcg);
     color: var(--color);
+}
+
+.nav_top,
+.nav_top .left,
+.nav_top .left .logo a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_top{
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    z-index: 10000;
+}
+
+.nav_top .left .menu_btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px 0 16px;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+
+.nav_top .left .menu_btn:hover{
+    background: var(--select-bcg);
+}
+
+.nav_top .left .menu_btn i{
+    font-size: 30px;
+    color: var(--color);
+}
+
+.nav_top .left .logo{
+    /* height: 20px; */
+    width: 90px;
+    margin: 0 14px 0 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 50px;
+}
+
+.nav_top .left .logo img{
+    width: 50px;
+}
+
+.nav_top .left .logo > *{
+    color: var(--color);
+}
+
+.nav_top .sort_menu{
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+}
+
+.nav_left{
+    width: 240px;
+    height: calc(100% - 56px);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10000;
 }
