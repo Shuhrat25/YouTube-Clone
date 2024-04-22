@@ -7,13 +7,22 @@
 }
 
 :root{
-    --dark-bcg: #000;
-    --dark-select: #717171;
-    --dark-select-hover: #f1f1f1;
+    --bcg: #fff;
+    --select-bcg: #f1f1f1;
+    --select-bcg-hover: #717171;
+    --color: #000;
+}
+
+.dark{
+    --bcg: #000;
+    --select-bcg: #717171;
+    --select-bcg-hover: #f1f1f1;
+    --color: #fff;
 }
 
 body{
     width: 100%;
     min-height: 100vh;
-    background: var(--dark-bcg);
+    background: var(--bcg);
+    color: var(--color);
 }
